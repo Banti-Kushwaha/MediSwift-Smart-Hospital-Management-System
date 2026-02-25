@@ -1,4 +1,4 @@
-# 🏥 ZeeCare Medical Institute - Hospital Management System
+# 🏥 Hospital Management System
 
 A comprehensive Hospital Management System built with the MERN stack, providing separate interfaces for patients and administrators to manage appointments, doctors, and medical services efficiently.
 
