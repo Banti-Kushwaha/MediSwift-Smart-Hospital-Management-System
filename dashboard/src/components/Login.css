@@ -1,0 +1,73 @@
+/* ===== Full Page Container ===== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e6f4f3, #f8fbfb);
+  padding: 120px 20px;
+}
+
+/* ===== Card Box ===== */
+.auth-box {
+  width: 450px;
+  max-width: 95%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ===== Heading ===== */
+.auth-box h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #1ba39c;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ===== Form ===== */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== Inputs ===== */
+.auth-form input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #dfeeee;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #1ba39c;
+  box-shadow: 0 0 0 3px rgba(27, 163, 156, 0.15);
+}
+
+/* ===== Button ===== */
+.auth-form button {
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #1ba39c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: #159a8c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(27, 163, 156, 0.3);
+}

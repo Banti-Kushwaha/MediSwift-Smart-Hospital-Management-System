@@ -1,0 +1,157 @@
+/* ===== MAIN DASHBOARD ===== */
+.dashboard {
+  min-height: 100vh;
+  padding: 120px 40px 60px;
+  background: linear-gradient(135deg, #e6f4f3, #f8fbfb);
+}
+
+/* ===== WELCOME TEXT ===== */
+.welcome {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1ba39c;
+  margin-bottom: 40px;
+}
+
+/* ===== STATS GRID ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* ===== STAT CARD ===== */
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1ba39c;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== SECTION ===== */
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.view-all {
+  font-size: 14px;
+  color: #1ba39c;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+/* ===== ORDER LIST ===== */
+.lab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== ORDER ITEM ===== */
+.lab-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 15px;
+  background: #f9fdfd;
+  transition: 0.3s ease;
+}
+
+.lab-item img {
+  width: 45px;
+  height: 45px;
+}
+
+.lab-item h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.lab-item p {
+  font-size: 13px;
+  color: #666;
+}
+
+.lab-item:hover {
+  background: #eefafa;
+  transform: scale(1.01);
+}
+
+/* ===== BADGES ===== */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.completed {
+  background: #22c55e;
+}
+
+.progress {
+  background: #f59e0b;
+}
+
+.pending {
+  background: #ef4444;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 100px 20px 40px;
+  }
+
+  .welcome {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+}

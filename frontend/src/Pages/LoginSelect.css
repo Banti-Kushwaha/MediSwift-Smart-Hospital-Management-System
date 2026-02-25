@@ -1,0 +1,100 @@
+/* Full Page Center */
+.role-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dff4f2, #f4fbfb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Inner Content */
+.role-content {
+  text-align: center;
+}
+
+/* Header */
+.role-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1ba39c;
+  margin-bottom: 10px;
+}
+
+.role-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* Cards Layout */
+.role-cards {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card Base */
+.role-card {
+  width: 360px;
+  padding: 60px 40px;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Big Bold Title */
+.role-card h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.role-card p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Highlight Borders */
+.patient {
+  border-top: 8px solid #1ba39c;
+}
+
+.admin {
+  border-top: 8px solid #1ba39c;
+}
+
+/* Hover Animation */
+.role-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* Glow Effect */
+.role-card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(27,163,156,0.1) 0%, transparent 70%);
+  top: -50%;
+  left: -50%;
+  transition: 0.5s;
+}
+
+.role-card:hover::before {
+  top: -30%;
+  left: -30%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .role-card {
+    width: 100%;
+  }
+}

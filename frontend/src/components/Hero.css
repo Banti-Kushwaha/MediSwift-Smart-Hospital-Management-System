@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  overflow-x: hidden;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Section */
+.hero-section {
+  padding: 120px 20px 80px;
+  background: linear-gradient(135deg, #e6f4f3, #f8fbfb);
+}
+
+/* Container */
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  gap: 60px;
+}
+
+/* Content */
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  background: linear-gradient(to right, #1ba39c, #159a8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #1ba39c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #159a8c;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(27, 163, 156, 0.3);
+}
+
+.secondary-btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: 2px solid #1ba39c;
+  background: transparent;
+  color: #1ba39c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #1ba39c;
+  color: white;
+}
+
+/* Image */
+.hero-image-wrapper {
+  position: relative;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease;
+}
+
+.hero-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+/* 
+/* Glow Effect */
+.hero-glow {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: #1ba39c;
+  opacity: 0.15;
+  border-radius: 50%;
+  filter: blur(80px);
+} */
+
+/* Responsive
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+} */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}

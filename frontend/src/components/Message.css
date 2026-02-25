@@ -1,0 +1,172 @@
+/* ============================= */
+/* ===== CONTACT CONTAINER ===== */
+/* ============================= */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 40px 80px;
+  background: linear-gradient(135deg, #e6f4f3, #f8fbfb);
+}
+
+/* ============================= */
+/* ===== CONTACT CARD BOX ===== */
+/* ============================= */
+
+.auth-box {
+  width: 1150px;              /* Increased width */
+  max-width: 96%;
+  background: #ffffff;
+  padding: 60px 90px;         /* More premium spacing */
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Hover subtle elevation */
+.auth-box:hover {
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* ===== HEADING ===== */
+/* ============================= */
+
+.auth-box h2 {
+  margin-bottom: 35px;
+  font-size: 34px;
+  font-weight: 700;
+  background: linear-gradient(to right, #1ba39c, #159a8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================= */
+/* ===== FORM LAYOUT ===== */
+/* ============================= */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Two Inputs Per Row */
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* ============================= */
+/* ===== INPUTS + TEXTAREA ===== */
+/* ============================= */
+
+.auth-form input,
+.auth-form select,
+.auth-form textarea {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #e3eeee;
+  font-size: 15px;
+  background: #fafcfc;
+  transition: all 0.3s ease;
+}
+
+/* Focus Animation */
+.auth-form input:focus,
+.auth-form select:focus,
+.auth-form textarea:focus {
+  outline: none;
+  border-color: #1ba39c;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(27, 163, 156, 0.12);
+}
+
+/* Textarea */
+.auth-form textarea {
+  resize: none;
+  min-height: 180px;
+}
+
+/* ============================= */
+/* ===== BUTTON ===== */
+/* ============================= */
+
+.auth-form button {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #1ba39c, #159a8c);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(27, 163, 156, 0.3);
+}
+
+.auth-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* ===== BOTTOM TEXT (IF ANY) ===== */
+/* ============================= */
+
+.auth-box p {
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.auth-box a {
+  color: #1ba39c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* ===== RESPONSIVE ===== */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .auth-box {
+    padding: 45px 40px;
+  }
+
+  .form-row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-box {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .auth-box h2 {
+    font-size: 26px;
+  }
+}
