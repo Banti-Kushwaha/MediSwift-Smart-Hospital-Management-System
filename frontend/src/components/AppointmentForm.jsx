@@ -194,9 +194,14 @@ const AppointmentForm = () => {
                 setDoctorLastName(lastName);
               }}
             >
+              {console.log("Selected Department:", department)}
               <option value="">Select Doctor</option>
               {doctors
-                .filter((doctor) => doctor.doctorDepartment === department)
+                .filter(
+                  (doctor) =>
+                    doctor.doctorDepartment?.toLowerCase().trim() ===
+                    department.toLowerCase().trim(),
+                )
                 .map((doctor, index) => (
                   <option
                     key={index}
