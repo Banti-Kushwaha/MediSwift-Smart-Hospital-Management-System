@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Context } from "../main";
+import { Context } from "../main.jsx";
 import "./Navbar.css";
 
 const Navbar = () => {
