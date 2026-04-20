@@ -14,7 +14,7 @@ config({ path: "./.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL],
+    origin: ["https://medi-swifts.vercel.app",process.env.FRONTEND_URL, process.env.DASHBOARD_URL],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true, // allows cookies/auth headers
   })
