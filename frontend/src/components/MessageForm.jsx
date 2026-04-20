@@ -20,7 +20,7 @@ const MessageForm = () => {
         "https://mediswift-backend-fsux.onrender.com/api/v1/message/send",
         { firstName, lastName, email, phone, message },
         {
-          withCredentials: true,
+         
           headers: { "Content-Type": "application/json" },
         },
       );

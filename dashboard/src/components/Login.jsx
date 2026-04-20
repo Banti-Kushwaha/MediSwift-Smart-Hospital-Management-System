@@ -20,7 +20,7 @@ const Login = () => {
         "https://mediswift-backend-fsux.onrender.com/api/v1/user/login",
         { email, password, confirmPassword, role: "Admin" },
         {
-          withCredentials: true,
+         
           headers: { "Content-Type": "application/json" },
         },
       );

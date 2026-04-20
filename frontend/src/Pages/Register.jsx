@@ -26,7 +26,6 @@ const Register = () => {
         "https://mediswift-backend-fsux.onrender.com/api/v1/user/patient/register",
         { firstName, lastName, email, phone, nic, dob, gender, password },
         {
-          withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
       );

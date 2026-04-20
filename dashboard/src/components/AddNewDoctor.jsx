@@ -59,7 +59,7 @@ const AddNewDoctor = () => {
       formData.append("docAvatar", docAvatar);
       await axios
         .post("https://mediswift-backend-fsux.onrender.com/api/v1/user/doctor/addnew", formData, {
-          withCredentials: true,
+         
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((res) => {

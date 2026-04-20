@@ -15,7 +15,7 @@ const Navbar = () => {
     try {
       const res = await axios.get(
         "https://mediswift-backend-fsux.onrender.com/api/v1/user/patient/logout",
-        { withCredentials: true },
+        
       );
       toast.success(res.data.message);
       setIsAuthenticated(false);

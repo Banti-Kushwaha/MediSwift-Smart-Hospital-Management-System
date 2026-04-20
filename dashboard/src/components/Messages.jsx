@@ -11,7 +11,7 @@ const Messages = () => {
       try {
         const { data } = await axios.get(
           "https://mediswift-backend-fsux.onrender.com/api/v1/message/getall",
-          { withCredentials: true },
+         
         );
         setMessages(data.messages);
       } catch (error) {

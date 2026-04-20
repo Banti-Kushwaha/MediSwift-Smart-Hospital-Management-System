@@ -36,7 +36,6 @@ const AppointmentForm = () => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
         "https://mediswift-backend-fsux.onrender.com/api/v1/user/doctors",
-        { withCredentials: true },
       );
       setDoctors(data.doctors);
       console.log("d", data.doctors);

@@ -14,7 +14,7 @@ const Dashboard = () => {
       try {
         const { data } = await axios.get(
           "https://mediswift-backend-fsux.onrender.com/api/v1/appointment/getall",
-          { withCredentials: true },
+       
         );
         setAppointments(data.appointments);
       } catch (error) {

@@ -26,7 +26,7 @@ const AddNewAdmin = () => {
           "https://mediswift-backend-fsux.onrender.com/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
-            withCredentials: true,
+           
             headers: { "Content-Type": "application/json" },
           },
         )

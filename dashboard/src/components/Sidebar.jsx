@@ -19,7 +19,7 @@ const Sidebar = () => {
   const handleLogout = async () => {
     await axios
       .get("https://mediswift-backend-fsux.onrender.com/api/v1/user/admin/logout", {
-        withCredentials: true,
+        
       })
       .then((res) => {
         toast.success(res.data.message);
