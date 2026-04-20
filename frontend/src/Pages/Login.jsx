@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:4000/api/v1/user/login",
+        "https://mediswift-backend-fsux.onrender.com/api/v1/user/login",
         { email, password, confirmPassword, role: "Patient" },
         {
           withCredentials: true,

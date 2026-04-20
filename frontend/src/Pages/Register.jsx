@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/user/patient/register",
+        "https://mediswift-backend-fsux.onrender.com/api/v1/user/patient/register",
         { firstName, lastName, email, phone, nic, dob, gender, password },
         {
           withCredentials: true,
