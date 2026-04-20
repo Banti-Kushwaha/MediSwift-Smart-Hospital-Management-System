@@ -25,7 +25,7 @@ const LoginSelect = () => {
           {/* Admin Card */}
           <div
             className="role-card admin"
-            onClick={()=>navigate("https://medi-swift-xi.vercel.app/")}
+            onClick={() => window.location.href = "https://medi-swift-xi.vercel.app/"}
           >
             <h2>Admin Login</h2>
             <p>Manage hospital system & emergency dashboard</p>
