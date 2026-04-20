@@ -26,10 +26,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/user/patient/me",
-          {
-            withCredentials: true,
-          }
+          "https://mediswift-backend-fsux.onrender.com/api/v1/user/patient/me",
         );
         setIsAuthenticated(true);
         setUser(response.data.user);

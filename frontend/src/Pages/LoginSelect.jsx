@@ -26,7 +26,7 @@ const LoginSelect = () => {
           <div
             className="role-card admin"
             onClick={() =>
-              (window.location.href = "http://localhost:5174/login")
+              (window.location.href = "https://medi-swift-xi.vercel.app/login")
             }
           >
             <h2>Admin Login</h2>
